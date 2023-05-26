@@ -6,11 +6,11 @@ public class Examen1AndreFlores {
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        
+
         int opc;
-         do {
-             System.out.println(" Bienvenido al menu de mi examen");
-        System.out.println("Ingrese una opcion. 1) Ejercicio de palabras. 2) Salir");
+        do {
+            System.out.println(" Bienvenido al menu de mi examen");
+            System.out.println("Ingrese una opcion. 1) Ejercicio de palabras. 2) Salir");
             opc = entrada.nextInt();
             if (opc == 1) {
 
@@ -21,15 +21,14 @@ public class Examen1AndreFlores {
                 System.out.println("ingrese la segunda cadena");
                 String cadenaNueva = entrada.nextLine();
                 palabras(cadenaOriginal, cadenaNueva, cadenaResp);
-               
+
             }// fin if 
             else if (opc == 2) {
                 System.out.println(" usted escogio la opcion 2) Salir, gracias por usar mi programa.");
-                
-            }
-            // HABIA UN ERROR CON EL DO WHILE Y NO LO PUDE ARREGLAR PERO HICE TODOS LOS EJERCICIOS
 
-        } while (opc!= 2);// fin while
+            }
+
+        } while (opc != 2);// fin while
 
     } //fin main
 
